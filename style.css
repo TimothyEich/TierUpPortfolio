@@ -1,0 +1,134 @@
+/*#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}*/
+/* Custom Audio controls, currently disabled until autoplay is achieved
+  #audiocontrols {
+    float: right;
+  }
+
+  #playbtn {
+    color: #eecf71;
+    background-color: #333;
+    font-size: 24px;
+    float: right;
+  }
+
+  #pausebtn {
+    color: #eecf71;
+    background-color: #333;
+    font-size: 24px;
+    float: right;
+  }
+
+  #volup {
+    color: #eecf71;
+    background-color: #333;
+    font-size: 24px;
+    float: right;
+  }
+
+  #voldown {
+    color: #eecf71;
+    background-color: #333;
+    font-size: 24px;
+    float: right;
+  }
+  
+  */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://images.unsplash.com/photo-1642285230633-cf8012546f14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(2, 196, 255, 0);
+    font-size: 30px;
+    padding-inline-start: 30px;
+    padding-top: 20px;
+}
+
+li a {
+    display:contents;
+    color: #fdfdfd;
+    text-align: left;
+    padding: 20px 20px;
+    text-decoration: none;
+    float: left;
+    font-family: 'Russo One', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+li a:hover {
+    color: #000000;
+    text-shadow: #ffffff 5px 5px 15px;
+    box-shadow: #ffffff 2px 2px 30px;
+    font-size: 2em;
+}
+
+li:not(:last-child) {
+    margin-bottom: 26px;
+}
+
+header {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 900;
+    font-family: 'Russo One', sans-serif;
+}
+
+#name {
+    color: #00000082;
+    font-size:  100px;
+    text-shadow: rgb(255, 255, 255) 2px 2px 8px;
+}
+
+
+
+#intro {
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(0, 0, 0) 0px 10px 200px;
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.5em;
+}
+
+/**/
+
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 6px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 0;
+    animation: Flash 1.4s infinite;
+  }
+  
+  @keyframes Flash {
+    0% {
+      transform: none;
+      opacity: 1;
+    }
+    50% {
+      transform: skew(-4deg, 0.4deg);
+      opacity: 0.50;
+    }
+    100% {
+      transform: none;
+      opacity: 1;
+    }
+  }

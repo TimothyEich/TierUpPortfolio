@@ -1,52 +1,66 @@
-/*#myVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-}*/
-/* Custom Audio controls, currently disabled until autoplay is achieved
-  #audiocontrols {
-    float: right;
+@keyframes Flash {
+    0% {
+      transform: none;
+      opacity: 1;
+      text-shadow: red 5px 5px 10px;
+      
+    }
+    50% {
+      transform: skew(-4deg, 0.4deg);
+      opacity: 0.75;
+      text-shadow: blue 5px 5px 10px;
+      color: dimgrey;
+      
+    }
+    100% {
+      transform: none;
+      opacity: 1;
+      text-shadow: green 5px 5px 10px;
+      
+    }
   }
 
-  #playbtn {
-    color: #eecf71;
-    background-color: #333;
-    font-size: 24px;
-    float: right;
+  @keyframes FlashBox {
+    0% {
+      transform: none;
+      opacity: 1;
+      box-shadow: red 5px 5px 10px;
+      border-radius: 20%;
+    }
+    50% {
+      opacity: 0.75;
+      box-shadow: blue 5px 5px 10px;
+      color: dimgrey;
+      border-radius: 70%;
+      opacity: 30%;
+    }
+    100% {
+      transform: none;
+      opacity: 1;
+      box-shadow: green 5px 5px 10px;
+      border-radius: 20%;
+    }
   }
 
-  #pausebtn {
-    color: #eecf71;
-    background-color: #333;
-    font-size: 24px;
-    float: right;
-  }
-
-  #volup {
-    color: #eecf71;
-    background-color: #333;
-    font-size: 24px;
-    float: right;
-  }
-
-  #voldown {
-    color: #eecf71;
-    background-color: #333;
-    font-size: 24px;
-    float: right;
-  }
-  
-  */
-body {
-    margin: 0;
-    padding: 0;
+  #Home{
     background-image: url("https://images.unsplash.com/photo-1642285230633-cf8012546f14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
     background-repeat: no-repeat;
     background-position-x: center;
-    background-size: cover;
+    background-size: cover;  
+    padding-bottom: 40em;
+  }
+
+  #AboutMe {
+    color: #000000;
+    text-align: center;
+    font-size: larger;
+    
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    
 }
 
 ul {
@@ -59,6 +73,11 @@ ul {
     padding-inline-start: 30px;
     padding-top: 20px;
 }
+
+#audio {
+  animation: FlashBox 3.6s infinite;
+}
+
 
 li a {
     display:contents;
@@ -75,7 +94,6 @@ li a {
 li a:hover {
     color: #000000;
     text-shadow: #ffffff 5px 5px 15px;
-    box-shadow: #ffffff 2px 2px 30px;
     font-size: 2em;
 }
 
@@ -91,16 +109,16 @@ header {
 }
 
 #name {
-    color: #00000082;
+    color: #000000;
     font-size:  100px;
-    text-shadow: rgb(255, 255, 255) 2px 2px 8px;
+    text-shadow: rgb(255, 255, 255) 5px 5px 7px;
 }
 
 
 
 #intro {
     color: rgb(255, 255, 255);
-    text-shadow: rgb(0, 0, 0) 0px 10px 200px;
+    text-shadow: #000000 5px 5px 15px;
     font-family: 'Russo One', sans-serif;
     font-size: 1.5em;
 }
@@ -115,20 +133,10 @@ h1 {
     font-weight: 300;
     margin: 0;
     line-height: 0;
-    animation: Flash 1.4s infinite;
+    animation: Flash 3.6s infinite;
   }
   
-  @keyframes Flash {
-    0% {
-      transform: none;
-      opacity: 1;
-    }
-    50% {
-      transform: skew(-4deg, 0.4deg);
-      opacity: 0.50;
-    }
-    100% {
-      transform: none;
-      opacity: 1;
-    }
+  .AboutMe {
+    margin-top: 15em;
+    color: #ffffff;
   }

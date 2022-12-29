@@ -10,32 +10,31 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    <!--Start figuring out layout of landing page and what the call to action will be-->
+<script src="https://kit.fontawesome.com/ae012ad079.js" crossorigin="anonymous"></script>
+  
   </head>
   <body>
-  <div class="Home" id="Home" >
+  <div class="Home" id="Home" >  
+    <img id="logo" src="Assets\TE Logo.png">
     <nav id="navbar">
-      <div id="navdiv">
-        <ul>
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#AboutMe">About</a></li>
-          <li><a href="#Experience">Experience</a></li>
-          <li><a href="#Gallery">Gallery</a></li>
-          <li><a href="#Contact">Contact Me</a></li>
-        </ul>
-      </div>    
+          <button><a href="#Home">Home</a></button>
+          <button><a href="#AboutMe">About</a></button>
+          <button><a href="#TechSkills">Tech Skills</a></button>
+          <button><a href="#Gallery">Gallery</a></button>
+          <button><a href="#Contact">Contact Me</a></button>
+        
+    </nav>
     <div id="audio" style="position:fixed; right:80px; top:20px;">
-      <audio  controls>
-      <source src="Jingle Bells - DJ Williams.mp3" type="audio/ogg">
-      <source src="Jingle Bells - DJ Williams.mp3" type="audio/mpeg">
-      Your browser does not support the audio element, just humm a funky tune in your head.
+      <audio controls autoplay loop>
+      <source src="Assets\Ringside - Dyalla.mp3" type="audio/ogg">
+      <source src="Assets\Ringside - Dyalla.mp3" type="audio/mpeg">
+      Your browser does not support the audio element, just humm a motivational tune in your head.
       </audio>
     </div> 
-    </nav>
+    
     <header>
       <div>
-        <span id="intro"><p>
+        <span id="intro"><p class="Home">
           Hello, I'm<br />
           <h1 id="name" class="Tim">Tim Eichenlaub</h1>
           Software Developer, Father, and <span id="veteran">Veteran</a></span>
@@ -49,32 +48,34 @@
 
     <section class="AboutMe"  >
       <header class="row"><h3 style="font-weight: 800;"id="AboutMe" >ABOUT ME</h3></header>
-      <p id="FourThings" style="font-weight: 800;">Four Things You Should Know About Me</p>
-      <div class="column">
+        <div class="column">
+          <i id="icons" class="fa-solid fa-heart fa-2xl fa-bounce"></i><br><br>
+          <h3 style="font-weight: 600;">Supportive</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+        <div class="column">
+          <i id="icons" class="fa-solid fa-list-check fa-2xl fa-bounce"></i> <br><br>
+          <h3 style="font-weight: 600;">Goal Oriented</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+        <div class="column">
+          <i id="icons" class="fa-solid fa-brain fa-2xl fa-bounce"></i> <br><br>
+          <h3 style="font-weight: 600;">Creative</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+        <div class="column">
+          <i id="icons" class="fa-solid fa-people-group fa-2xl fa-bounce"></i> <br><br>
+          <h3 style="font-weight: 600;">Selfless</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        </div>
+    </section>
+
+    <section class="TechSkills" id="#TechSkills" >
+      <header class="row-e"><h3 style="font-weight: 800;" id="myExperience">Experience with Technologies</h3></header>
+      <div class="row-e">
         <p style="font-weight: 600;">Supportive</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
       </div>
-      <div class="column">
-        <p style="font-weight: 600;">Passionnate</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-      </div>
-      <div class="column">
-        <p style="font-weight: 600;">Creative</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-      </div>
-      <div class="column">
-        <p style="font-weight: 600;">Support</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-      </div>
-    </section>
-
-    <section class="Experience" id="Experience" >
-      <header class="row-e"><h3 style="font-weight: 800;" id="myExperience">My Experience</h3></header>
-      <p id="Technologies" style="font-weight: 800;">Technologies</p>
-      <div class="row-e">
-        <p style="font-weight: 600;">Supportive</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-      </div>
       <div class="row-e">
         <p style="font-weight: 600;">Passionnate</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
@@ -84,11 +85,11 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
       </div>
       <div class="row-e">
-        <p style="font-weight: 600;">Support</p>
+        <p style="font-weight: 600;">Selfless</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
       </div>
     </section>
-
+    <script href="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>

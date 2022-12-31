@@ -17,15 +17,15 @@
   <div class="Home" id="Home" >  
     <img id="logo" src="Assets\TE Logo.png">
     <nav id="navbar">
-          <button><a href="#Home">Home</a></button>
-          <button><a href="#AboutMe">About</a></button>
-          <button><a href="#TechSkills">Tech Skills</a></button>
-          <button><a href="#Gallery">Gallery</a></button>
-          <button><a href="#Contact">Contact Me</a></button>
-        
+          <button id="navitems"><a href="#Home">Home Page</a></button>
+          <button id="navitems"><a href="#AboutMe">About Me</a></button>
+          <button id="navitems"><a href="#TechSkills">Technologies</a></button>
+          <button id="navitems"><a href="#Gallery">Gallery</a></button>
+          <button id="navitems"><a href="#Contact">Contact Me</a></button>
+
     </nav>
     <div id="audio" style="position:fixed; right:80px; top:20px;">
-      <audio controls autoplay loop>
+      <audio controls loop>
       <source src="Assets\Ringside - Dyalla.mp3" type="audio/ogg">
       <source src="Assets\Ringside - Dyalla.mp3" type="audio/mpeg">
       Your browser does not support the audio element, just humm a motivational tune in your head.
@@ -43,51 +43,44 @@
       <button class="Download" >Download Resume</button>
     </header>  
   </div>
-    
-  
-
     <section class="AboutMe"  >
       <header class="row"><h3 style="font-weight: 800;"id="AboutMe" >ABOUT ME</h3></header>
         <div class="column">
-          <i id="icons" class="fa-solid fa-heart fa-2xl fa-bounce"></i><br><br>
-          <h3 style="font-weight: 600;">Supportive</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <i id="icons" class="fa-solid fa-heart fa-2xl fa-bounce"></i><br><br><br>
+          <h3 style="font-weight: 600;" class="traits">Supportive</h3><br>
+          <p>Being supportive is one of my personal strengths, I always try to remind myself to ask team members or friends if there is anything I can do to help. It is a great way to build a relationship with those individuals and you never know when you will need some support yourself.</p>
         </div>
         <div class="column">
-          <i id="icons" class="fa-solid fa-list-check fa-2xl fa-bounce"></i> <br><br>
-          <h3 style="font-weight: 600;">Goal Oriented</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <i id="icons" class="fa-solid fa-list-check fa-2xl fa-bounce"></i> <br><br><br>
+          <h3 style="font-weight: 600;" class="traits">Goal Oriented</h3><br>
+          <p>This is a way of life for me. No matter what I'm working on, I'm making big goals and small goals to reach along the way. Always keeping in mind that goals and plans can change at a moment’s notice and being ready to adjust my goals when necessary to adjust for any changes.</p>
         </div>
         <div class="column">
-          <i id="icons" class="fa-solid fa-brain fa-2xl fa-bounce"></i> <br><br>
-          <h3 style="font-weight: 600;">Creative</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <i id="icons" class="fa-solid fa-brain fa-2xl fa-bounce"></i> <br><br><br>
+          <h3 style="font-weight: 600;" class="traits">Creative</h3><br>
+          <p>I love to think of things from different perspectives while also learning different ways to make it work while also trying to make it work better. It has been something that has really helped me learn different techniques and how to expand my knowledge in my coding experience. </p>
         </div>
         <div class="column">
-          <i id="icons" class="fa-solid fa-people-group fa-2xl fa-bounce"></i> <br><br>
-          <h3 style="font-weight: 600;">Selfless</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+          <i id="icons" class="fa-solid fa-people-group fa-2xl fa-bounce"></i> <br><br><br>
+          <h3 style="font-weight: 600;" class="traits">Selfless</h3><br>
+          <p>This is something that was instilled in me during my time in the military. Just the thought of being a team, if the team wins, we all win mindset. Whatever it takes for the team to have the best chance of success, I am always down to make some personal sacrifices to make it happen.</p>
         </div>
     </section>
 
-    <section class="TechSkills" id="#TechSkills" >
-      <header class="row-e"><h3 style="font-weight: 800;" id="myExperience">Experience with Technologies</h3></header>
-      <div class="row-e">
-        <p style="font-weight: 600;">Supportive</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-      </div>
-      <div class="row-e">
-        <p style="font-weight: 600;">Passionnate</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-      </div>
-      <div class="row-e">
-        <p style="font-weight: 600;">Creative</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-      </div>
-      <div class="row-e">
-        <p style="font-weight: 600;">Selfless</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-      </div>
+    <section class="TechSkills" id="TechSkills" >
+      <header class="row-e"><h3 style="font-weight: 800;" id="myExperience">Technologies</h3></header>
+      <h3 style="font-weight: 600;">HTML</h3>
+      <progress id="progressbar" value="90" max="100"></progress>
+      <h3 style="font-weight: 600;">Javascript</h3>
+      <progress id="progressbar" value="55" max="100"></progress>
+      <h3 style="font-weight: 600;">CSS</h3>
+      <progress id="progressbar" value="90" max="100"></progress>
+      <h3 style="font-weight: 600;">Github</h3>
+      <progress id="progressbar" value="70" max="100"></progress>
+      <h3 style="font-weight: 600;">React</h3>
+      <progress id="progressbar" value="65" max="100"></progress>
+      <h3 style="font-weight: 600;">Google</h3>
+      <progress id="progressbar" value="100" max="100"></progress>
     </section>
     <script href="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

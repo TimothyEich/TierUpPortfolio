@@ -1,3 +1,5 @@
+/****KeyFrames****/
+
 @keyframes Flash {
     0% {
       transform: none;
@@ -61,7 +63,11 @@
     }
   }
 
-  html, body, .page {
+  /****End of KeyFrames****/
+
+  /****General****/
+
+  html, body, .home .AboutMe .TechSkills {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -70,36 +76,26 @@
     overflow: hidden; 
   }
 
-  #Home{
-    background-image: url("https://images.unsplash.com/photo-1642285230633-cf8012546f14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: cover;  
-    height: 100%;
-  }
-
-  #AboutMe {
-    color: #000000;
-    padding-top: 5%;
-    text-align: center;
-    font-size: larger;
-  }
-  
   body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 
+/****Navbar****/
+
 #navbar {
-    width: 90%;
-    
-    list-style-type: none;
+    width: 100%;
+    height: auto;
     margin: 0;
-    padding:0;
+    padding: 0;
     overflow: hidden;
-    background-color: rgba(2, 196, 255, 0);
+    background-color: transparent;
     font-size: 30px;
-    float:left;
+    display: flex; justify-content: center;
+    position: fixed;
 }
 
 #navbar button {
@@ -113,28 +109,37 @@
     display:contents;
     color: #ffffff;
     text-decoration: none;
-    float: left;
     font-family: 'Russo One', sans-serif;
     padding-top: 1%;
     padding-bottom: 10px;
     text-shadow: rgb(0, 0, 0) 0px 0px 10px;
-    
-}
-
-#logo {
-  float: left;
-  border-width: 10px;
-  width: auto;
-  height: 8%;
-  padding-right: 2.5%;
-  padding-left: 2.5%;
-
 }
 
 #navbar a:hover {
     color: #000000;
     text-shadow: #ffffff 0px 0px 15px;
     font-size: 40px;
+}
+
+#logo {
+  border-width: 10px;
+  width: auto;
+  height: 8%;
+  padding-right: 2.5%;
+  padding-left: 2.5%;
+  display: none;
+}
+
+/****End of Navbar****/
+
+/****Home Page****/
+
+#Home{
+    background-image: url("https://images.unsplash.com/photo-1642285230633-cf8012546f14?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: cover;  
+    height: 100%;
 }
 
 header {
@@ -203,15 +208,27 @@ h1 {
   line-height: 0;
   animation: Flash 4s infinite;
 }
-  
+/****End of Home****/
+
+/****About****/  
+
+#AboutMe {
+    color: #000000;
+    padding-top: 5%;
+    text-align: center;
+    font-size: larger;
+}
+
 .AboutMe {
-  font-size: x-large;
   background-color: rgb(79, 79, 79);
   color: #ffffff;
   text-align: center;
+  font-size: x-large;
+  font-weight: 400;
 }
 
-#AboutMe {
+#AboutMe {  
+  font-weight: 900;
   background-color: rgb(79, 79, 79);
   text-shadow: #ffffff 1px 1px 4px;
   text-align: center;
@@ -228,18 +245,34 @@ h1 {
   padding-bottom: 5%;
 }
 
+#icons {
+height: 0px;
+color: #ffffff;
+}
+
+.traits {
+  color: #232d9a;
+  font-size: larger;
+  text-shadow: #ffffff 3px 3px 12px;
+}
+
+
+/****End of About****/
+
+/****Technologies****/
+
 #TechSkills {
 background-color: rgb(189, 189, 189);
+width: auto;
 }
 
 #Technologies {
   font-weight: bolder;
 }
 
-#icons {
-height: 0px;
-color: #ffffff;
-}
+/****End of Technologies****/
+
+/****Responsive****/
 
 @media screen and (max-width: 600px) {
   .column {
@@ -248,3 +281,5 @@ color: #ffffff;
 
 
 }
+
+/****End of Responsive****/
